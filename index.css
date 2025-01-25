@@ -135,15 +135,65 @@ header .contact a {
     line-height: 1.5;
 }
 #card {
-    background-image: url('picture/КАРТА.png'); /* Путь к изображению */
-    background-size: cover; /* Масштабирование изображения для покрытия всей секции */
-    background-position: center; /* Позиционирование изображения по центру */
-    background-repeat: no-repeat; /* Запрет повторения изображения */
-    padding: 100px 20px; /* Отступы внутри секции */
-    color: #ffffff; /* Цвет текста для лучшей читаемости */
-    text-align: center; /* Выравнивание текста по центру */
+    background-image: url('picture/КАРТА.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 100px 20px; 
+    color: #ffffff; 
+    text-align: center; 
+    position: relative; 
+    min-height: 500px; 
 }
 
+.cover-container {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; /* Сдвиг влево */
+    top: 20px; /* Сдвиг вверх */
+    z-index: 1; /* Убедитесь, что контейнер выше других элементов */
+}
 
+.cover-image {
+    position: absolute;
+    left: 299px;
+    top: 100px;
+    width: 400px; /* Ширина подложки */
+    height: auto; /* Сохранение пропорций */
 
+}
 
+.cover-text {
+    position: absolute; /* Абсолютное позиционирование текста */
+    left: 500px;
+    top: 160px; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Точное центрирование */
+    text-align: center; /* Выравнивание текста по центру */
+    color: #000000; /* Цвет текста (настройте под свои нужды) */
+}
+
+.cover-text h2 {
+    font-size: 24px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+    white-space: nowrap; /* Запрет переноса текста на новую строку */
+}
+
+.cover-text p {
+    font-size: 18px; /* Размер шрифта для "ГДЕ НАС ИСКАТЬ?" */
+    margin: 0; /* Убираем отступы */
+}
+
+.frame-container {
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 15px; 
+    text-align: center; 
+}
+
+.frame-image {
+    max-width: 100%; 
+    height: auto; 
+}
