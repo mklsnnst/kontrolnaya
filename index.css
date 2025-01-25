@@ -166,20 +166,21 @@ header .contact a {
     position: absolute; /* Абсолютное позиционирование текста */
     left: 500px;
     top: 160px; /* Центрирование по горизонтали */
-    transform: translate(-50%, -50%); /* Точное центрирование */
-    text-align: center; /* Выравнивание текста по центру */
+    transform: translate(-50%, -50%); /* Точное центрирование */ /* Выравнивание текста по центру */
     color: #000000; /* Цвет текста (настройте под свои нужды) */
 }
 
 .cover-text h2 {
     font-size: 24px; /* Размер шрифта */
     margin: 0; /* Убираем отступы */
-    white-space: nowrap; /* Запрет переноса текста на новую строку */
+    white-space: nowrap; 
+    text-align: left;
 }
 
 .cover-text p {
     font-size: 18px; /* Размер шрифта для "ГДЕ НАС ИСКАТЬ?" */
     margin: 0; /* Убираем отступы */
+    text-align: right;
 }
 
 .frame-container {
@@ -196,4 +197,13 @@ header .contact a {
 .frame-image {
     max-width: 100%; 
     height: auto; 
+}
+
+.metka-image {
+    position: absolute;
+    width: 52px; /* Размер метки */
+    height: 52px;
+    left: 520px; /* Позиция по горизонтали */
+    top: 325px;
+    object-fit: cover; 
 }
